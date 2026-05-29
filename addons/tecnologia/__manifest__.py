@@ -23,8 +23,10 @@ Permite administrar, rastrear, asignar y desincorporar las herramientas tecnolog
     # always loaded
     'data': [
         'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/menu.xml'
+        'views/workstation.xml',
+        'views/phones.xml',
+        'views/printers.xml',
+        'views/menu.xml',
     ],
     'installable': True,
     'application': True, 

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from . import Workstation
+from . import Workstation, Phones, Printers
 
 
 

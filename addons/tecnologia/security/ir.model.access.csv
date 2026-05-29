@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_tecnologia_workstation,tecnologia_workstation,model_tecnologia_workstation,base.group_user,1,1,1,1
+access_tecnologia_phones,tecnologia_phones,model_tecnologia_phones,base.group_user,1,1,1,1
+access_tecnologia_printers,tecnologia_printers,model_tecnologia_printers,base.group_user,1,1,1,1

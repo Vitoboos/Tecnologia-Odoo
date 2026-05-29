@@ -6,7 +6,7 @@
       sequence="10"
     />
 
-    <!-- Sub-menu (first level) -->
+    <!-- Sub-menu -->
     <menuitem
       id="menu_tecnologia_devices"
       name="Equipos"
@@ -20,6 +20,22 @@
       name="Estaciones de Trabajo"
       parent="menu_tecnologia_devices"
       action="action_workstation"
+      sequence="10"
+    />
+
+    <menuitem
+      id="menu_tecnologia_phones"
+      name="Teléfonos Corporativos"
+      parent="menu_tecnologia_devices"
+      action="action_phones"
+      sequence="10"
+    />
+
+    <menuitem
+      id="menu_tecnologia_printers"
+      name="Impresoras"
+      parent="menu_tecnologia_devices"
+      action="action_printers"
       sequence="10"
     />
 

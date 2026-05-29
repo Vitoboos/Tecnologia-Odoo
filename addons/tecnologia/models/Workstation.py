@@ -10,7 +10,7 @@ class Workstation(models.Model):
     type = fields.Selection([('escritorio', 'Escritorio'), ('laptop', 'Laptop')], string='Tipo')
     manufacturer = fields.Char(string="Fabricante")
     model = fields.Char(string="Modelo")
-    antiquity = fields.Char(string="Antiguedad")
+    serial = fields.Char(string="Número de Serie")
     cpu = fields.Char(string="Procesador")
     cpu_gen = fields.Char(string="Generación")
     ram = fields.Char(string="RAM")
@@ -22,6 +22,7 @@ class Workstation(models.Model):
     mac_address = fields.Char(string="Dirección MAC")
     ip_address = fields.Char(string="Dirección IP")
     # Fechas
+    antiquity = fields.Date(string="Fecha de Adquisición")
     date_assigned = fields.Date(string="Fecha de Asignación")
     date_checked = fields.Date(string="Última revisión")
 

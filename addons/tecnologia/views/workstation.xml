@@ -1,0 +1,81 @@
+<odoo>
+  <data>
+    <record id="action_workstation" model="ir.actions.act_window">
+      <field name="name"> Estaciones de trabajo </field>
+      <field name="res_model">tecnologia.workstation</field>
+      <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- List View -->
+    <record id="view_workstation_list=" model="ir.ui.view">
+      <field name="name">tecnologia.workstation.list</field>
+      <field name="model">tecnologia.workstation</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name" />
+          <field name="type" />
+          <field name="cpu" />
+          <field name="cpu_gen" />
+          <field name="ram" />
+          <field name="storage" />
+          <field name="storage_type" />
+
+        </list>
+      </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_workstation_form" model="ir.ui.view">
+      <field name="name">tecnologia.workstation.form</field>
+      <field name="model">tecnologia.workstation</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+
+            <group>
+              <group>
+                <separator string="Datos de Fábrica" />
+
+                <field name="type" />
+                <field name="manufacturer" />
+                <field name="model" />
+                <field name="serial" />
+
+              </group>
+
+              <group>
+                <separator string="Datos Técnicos" />
+
+                <field name="cpu" />
+                <field name="cpu_gen" />
+                <field name="ram" />
+                <field name="ram_gen" />
+                <field name="storage" />
+                <field name="storage_type" />
+              </group>
+
+              <group>
+                <separator string="Red y Dominio" />
+
+                <field name="name" />
+                <field name="mac_address" />
+                <field name="ip_address" />
+
+              </group>
+
+              <group>
+                <separator string="Rastreo" />
+
+                <field name="antiquity" />
+                <field name="date_assigned" />
+                <field name="date_checked" />
+              </group>
+            </group>
+
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+  </data>
+</odoo>

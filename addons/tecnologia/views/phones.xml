@@ -1,0 +1,73 @@
+<odoo>
+    <data>
+        <record id="action_phones" model="ir.actions.act_window">
+            <field name="name"> Estaciones de trabajo </field>
+            <field name="res_model">tecnologia.phones</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+        <!-- List View -->
+        <record id="view_phones_list=" model="ir.ui.view">
+            <field name="name">tecnologia.phones.list</field>
+            <field name="model">tecnologia.phones</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="manufacturer" />
+                    <field name="model" />
+                    <field name="serial" />
+                    <field name="number" />
+                    <field name="imei1" />
+                    <field name="imei2" />
+
+                </list>
+            </field>
+        </record>
+
+        <!-- Form View -->
+        <record id="view_phones_form" model="ir.ui.view">
+            <field name="name">tecnologia.phones.form</field>
+            <field name="model">tecnologia.phones</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+
+                            <group>
+                                <separator string="Datos Técnicos" />
+
+                                <field name="manufacturer" />
+                                <field name="model" />
+                                <field name="serial" />
+                                <field name="release" />
+                            </group>
+
+                            <group>
+                                <separator string="Identificación" />
+
+                                <field name="number" />
+                                <field name="imei1" />
+                                <field name="imei2" />
+                            </group>
+
+                            <group>
+                                <separator string="Red" />
+
+                                <field name="mac_address" />
+                                <field name="ip_address" />
+                            </group>
+
+                            <group>
+                                <separator string="Rastreo" />
+
+                                <field name="antiquity" />
+                                <field name="date_assigned" />
+                                <field name="date_checked" />
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>
