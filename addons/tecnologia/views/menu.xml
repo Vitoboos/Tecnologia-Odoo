@@ -1,0 +1,27 @@
+<odoo>
+  <data>
+    <menuitem
+      id="menu_tecnologia_root"
+      name="Tecnologia"
+      sequence="10"
+    />
+
+    <!-- Sub-menu (first level) -->
+    <menuitem
+      id="menu_tecnologia_devices"
+      name="Equipos"
+      parent="menu_tecnologia_root"
+      sequence="10"
+    />
+
+    <!-- Action menu item (opens a view) -->
+    <menuitem
+      id="menu_tecnologia_workstation"
+      name="Estaciones de Trabajo"
+      parent="menu_tecnologia_devices"
+      action="action_workstation"
+      sequence="10"
+    />
+
+  </data>
+</odoo>
