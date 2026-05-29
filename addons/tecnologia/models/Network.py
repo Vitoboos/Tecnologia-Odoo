@@ -1,14 +1,17 @@
 from odoo import models, fields
 
-class Gadgets(models.Model):
-    _name =   "tecnologia.gadgets"
-    _description = "Accesorios"
+class Network(models.Model):
+    _name =   "tecnologia.network"
+    _description = "Equipos para la gestión de la red"
 
     # Especificaciones
-    type = fields.Selection([('audifonos', 'Audifonos'), ('deskphone', 'Telefono de Escritorio')], string='Tipo')
+    type = fields.Selection([
+    ('switch', 'Switchs'), ('router', 'Routers'),('accesspoint', 'Puntos de Acceso'),], string='Tipo')
     manufacturer = fields.Char(string="Fabricante")
     model = fields.Char(string="Modelo")
     serial = fields.Char(string="Número de Serie")
+    ports = fields.Integer(string="Puertos")
+    location = fields.Char(string="Ubicación")
     # Direccion de Red
     mac_address = fields.Char(string="Dirección MAC")
     ip_address = fields.Char(string="Dirección IP")

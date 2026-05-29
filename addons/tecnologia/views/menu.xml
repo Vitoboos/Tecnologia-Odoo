@@ -6,7 +6,7 @@
       sequence="10"
     />
 
-    <!-- Sub-menu -->
+    <!-- Submenus -->
     <menuitem
       id="menu_tecnologia_devices"
       name="Equipos"
@@ -14,7 +14,14 @@
       sequence="10"
     />
 
-    <!-- Action menu item (opens a view) -->
+    <menuitem
+      id="menu_tecnologia_internet"
+      name="Redes"
+      parent="menu_tecnologia_root"
+      sequence="10"
+    />
+
+    <!-- Action menus -->
     <menuitem
       id="menu_tecnologia_workstation"
       name="Estaciones de Trabajo"
@@ -22,6 +29,7 @@
       action="action_workstation"
       sequence="10"
     />
+
 
     <menuitem
       id="menu_tecnologia_phones"
@@ -36,6 +44,22 @@
       name="Impresoras"
       parent="menu_tecnologia_devices"
       action="action_printers"
+      sequence="10"
+    />
+
+    <menuitem
+      id="menu_tecnologia_gadgets"
+      name="Accesorios"
+      parent="menu_tecnologia_devices"
+      action="action_gadgets"
+      sequence="10"
+    />
+
+    <menuitem
+      id="menu_tecnologia_network"
+      name="Dispositivos"
+      parent="menu_tecnologia_internet"
+      action="action_network"
       sequence="10"
     />
 

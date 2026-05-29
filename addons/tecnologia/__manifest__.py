@@ -26,6 +26,8 @@ Permite administrar, rastrear, asignar y desincorporar las herramientas tecnolog
         'views/workstation.xml',
         'views/phones.xml',
         'views/printers.xml',
+        'views/gadgets.xml',
+        'views/network.xml',
         'views/menu.xml',
     ],
     'installable': True,
